@@ -1,14 +1,18 @@
-# Creating Your Own NPX Introduction Command
+# My NPX Introduction Command
 
-Creating your own `npx` introduction command can be a fun and useful project! The `npx` command allows you to run Node.js-based packages without having to globally install them. Here's a step-by-step guide to creating your own `npx` introduction command:
+![NPX Introduction Command](https://your-image-url.com)
 
-## Step 1: Choose a Package Name
+Welcome to my NPX introduction command! To check it out run:<br>
+```bash
+npx iamparthiba
+```
+Let's walk through the steps how to build it from scratch:
 
-Decide on a unique name for your package. This name will be used to invoke your introduction command using `npx`.
+## Step 1: Choose a Unique Name
 
-## Step 2: Create a New Directory
+I've chosen the name `iamparthiba` for this package. Feel free to replace it with your preferred name throughout the instructions. Lets consider `my-npx-intro` for now.
 
-Create a new directory for your package. You can name it after the package name you chose in the previous step.
+## Step 2: Create a Project Directory
 
 ```bash
 mkdir my-npx-intro
@@ -17,34 +21,45 @@ cd my-npx-intro
 
 ## Step 3: Initialize Your Package
 
-Initialize your project as a Node.js package using the following command:
-
 ```bash
 npm init -y
 ```
 
 ## Create an Executable Script
 
-Inside your project directory, create a JavaScript file that will serve as the executable script for your npx command. Let's call this file index.js. You can follow my example or edit it accordingly.
+Inside the project directory, create a JavaScript file named `index.js`. This script is the main executable file.<br>
+I used several packages to style my text that includes:
 
-### Make sure to define bin in 'package.json'
+- **[Figlet](https://www.npmjs.com/package/figlet):** Used for ASCII art fonts.
+- **[Gradient-String](https://www.npmjs.com/package/gradient-string):** Adds gradient colors to text.
+- **[Text-Wrap](https://www.npmjs.com/package/text-wrap):** Wraps the text to fit within the terminal width.
+- **[Chalk](https://www.npmjs.com/package/chalk):** Styles the text with colors.
+- 
+
+## Update `package.json`
+
+Make sure to define the `bin` property in your `package.json`:
 
 ```json
 "bin": {
-  "package-name": "./index.js"
+  "my-npx-intro": "./index.js"
 },
+```
 
+## Test Your Command
 
-## Test your command
+Link the package using `npm link` and test it with:
 
-- Link the package using `npm link`
-- Test by running the command `npx package-name`
-- If it works as expected, make sure to unlink it using `npm unlink -g directory-name`
+```bash
+npx my-npx-intro
+```
 
-## Publish your package
+If it looks good, unlink the package with `npm unlink -g my-npx-intro`.
 
-- Make an [npm account](https://www.npmjs.com/)
-- Login to your account using the command `npm login`
-- Publish the package using the command `npm publish`
+## Publish Your Package
 
-Send it to your friends and find a cool way to introduce yourself!
+- Create an [npm account](https://www.npmjs.com/).
+- Log in to your account using `npm login`.
+- Publish the package with `npm publish`.
+
+Now, you have your own NPX introduction command! Share it with your friends and make your terminal introductions more stylish and personalized.
