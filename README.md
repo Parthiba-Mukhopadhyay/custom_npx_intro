@@ -5,7 +5,7 @@
 
 ### Welcome to my NPX introduction command! To check it out run:<br>
 ```bash
-npx iamparthiba
+npx itsmeparthiba
 ```
 ### Here is how it looks:
 <br>
@@ -16,7 +16,7 @@ Let's walk through the steps how to build it from scratch:
 
 ## Step 1: Choose a Unique Name
 
-I've chosen the name `iamparthiba` for this package. Feel free to replace it with your preferred name throughout the instructions. Lets consider `my-npx-intro` for now.
+I've chosen the name `itsmeparthiba` for this package. Feel free to replace it with your preferred name throughout the instructions. Lets consider `my-npx-intro` for now.
 
 ## Step 2: Create a Project Directory
 
