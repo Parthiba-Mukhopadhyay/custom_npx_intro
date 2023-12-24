@@ -1,11 +1,17 @@
-# My NPX Introduction Command
+# Custom NPX Command to introduce myself
 
-![NPX Introduction Command](https://your-image-url.com)
 
-Welcome to my NPX introduction command! To check it out run:<br>
+
+
+### Welcome to my NPX introduction command! To check it out run:<br>
 ```bash
 npx iamparthiba
 ```
+### Here is how it looks:
+<br>
+
+![npx](https://github.com/Parthiba-Mukhopadhyay/custom_npx_intro/assets/89331202/860decc3-8d5c-4816-8218-a4385926a8b6)
+
 Let's walk through the steps how to build it from scratch:
 
 ## Step 1: Choose a Unique Name
